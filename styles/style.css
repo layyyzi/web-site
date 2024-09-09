@@ -1,0 +1,29 @@
+
+.text-other {
+    color: black;
+    font-size: 18px;
+    background-color: lightblue;
+    border-style: outset;
+    border-width: 5px;
+    border-color: darkslateblue;
+    text-align: center;
+    font-family: "Yu Gothic Medium", sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    border-radius: 8px}
+.text-main {
+    color: black;
+    font-size: 20px;
+    background-color: darkseagreen;
+    border-style: outset;
+    border-width: 6px;
+    border-color: greenyellow;
+    text-align: center;
+    font-family: fantasy sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    border-radius: 8px}
+
+
+
+
