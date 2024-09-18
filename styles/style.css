@@ -94,15 +94,21 @@ footer {
     text-decoration: underline;
 }
 /* section*/
+
 .banner {
     background-image: url('../images/banner1.gif');
     background-size: auto;
     background-position: center;
     color: white;
     text-align: center;
-    padding: 100px 20px;
-    width: 100%;
+    padding: 100px 15px;
+    width: 98%;
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
 }
 
 @media (max-width: 768px) {
