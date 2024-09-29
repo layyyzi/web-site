@@ -2,29 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>cryptowork</title>
+    <title>cryptopress</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="html2" href="index2.html">
 </head>
 <body>
 
-
 <header>
-    <nav>
-        <ul>
-            <li><a href="https://soundcloud.com/user-636801572" target="_blank">Soundcloud</a></li>
-            <li><a href="https://www.instagram.com/layyyzi_/" target=_blank"> Instagram</a></li>
-            <li><a href="https://web.telegram.org/layyyzi/" target=_blank">Telegram</a></li>
+    <nav class="navbar">
+        <div  class="logo">CryptoPress</div>
+        <ul class="nav-links">
+
+
+            <li><a href="index2.html"target="_blank">About</a></li>
+            <li><a href="https://www.binance.com/ru-UA" target="_blank">Services</a></li>
+            <li><a href="https://www.instagram.com/layyyzi_/"target="_blank">Contact</a></li>
         </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
     </nav>
 </header>
 
+<script>
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
 
+    // Переключение меню и анимации бургера
+    burger.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');  // Переключение видимости меню
+        burger.classList.toggle('toggle');   // Анимация бургер-меню (крестик)
+    });
+</script>
 
 
 <section class="banner">
     <strong><h1 class="neon"> Welcome to CryptoWork </h1></strong>
-   <strong> <p class="neon">Your go-to place for all things cryptocurrency.</p></strong>
+    <strong> <p class="neon">Your go-to place for all things cryptocurrency.</p></strong>
 </section>
 
 
@@ -36,10 +52,10 @@
     <nav>
         <ul>
             <strong>
-            <li><h2>Види криптобірж: </h2></li>
-            <li><a href="https://www.bybit.com/ru-RU" target="_blank">→ Bybit </a></li>
-            <li><a href="https://www.binance.com/ru-UA" target="_blank" >→ Binance</a></li>
-            <li><a href="https://www.okx.com/ru" target="_blank" >→ OKX</a></li> </strong>
+                <li><h2>Види криптобірж: </h2></li>
+                <li><a href="https://www.bybit.com/ru-RU" target="_blank">→ Bybit </a></li>
+                <li><a href="https://www.binance.com/ru-UA" target="_blank" >→ Binance</a></li>
+                <li><a href="https://www.okx.com/ru" target="_blank" >→ OKX</a></li> </strong>
 
         </ul>
     </nav>
@@ -47,7 +63,7 @@
 
 <main>
     <section class="news">
-       <strong> <h2> Про біржі: </h2></strong>
+        <strong> <h2> Про біржі: </h2></strong>
         <article>
             <h3>Bybit</h3>
             <p>Це криптовалютна біржа, яка пропонує торгівлю криптовалютами з кредитним плечем. Компанію Bybit засновано у 2018 році зі штаб-квартирою в Сінгапурі.</p>
@@ -108,40 +124,41 @@
 
 <p class="text-default"> В світі криптовалюти, по цей час дуже набирають обертів телеграм боти в додатку telegram так звані "тапалки" і ось приклад 8 тапалок в який багато мільйонів користувачів:   </p>
 <div class="grid-container">
-    <div class="grid-item"><a href="https://t.me/memefi_coin_bot/main?startapp=r_a163c6457f" target="_blank">Memefi</a></div>
-    <div class="grid-item"><a href="https://t.me/tapswap_mirror_2_bot?start=r_777221361" target="_blank">TapSwap</a></div>
-    <div class="grid-item"><a href="https://t.me/catizenbot/gameapp?startapp=r_752_3020524" target="_blank">Catizen</a></div>
-    <div class="grid-item"><a href="https://t.me/blum/app?startapp=ref_1kSGR6KgWK" target="_blank">Blum</a></div>
-    <div class="grid-item"><a href="https://t.me/hamstEr_kombat_bot/start?startapp=kentId777221361" target="_blank">Hamster combat</a></div>
-    <div class="grid-item"><a href="https://t.me/empirebot/game?startapp=hero777221361" target="_blank">X empire</a></div>
-    <div class="grid-item"><a href="https://t.me/dogshouse_bot/join?startapp=CcTyDgsDTY2OgIQ8EV4xKA" target="_blank">Dogs</a></div>
-    <div class="grid-item"><a href="https://t.me/pocketfi_bot/Mining?startapp=777221361" target="_blank">PocketFi</a></div>
+    <div class="grid-item"> <a class="memefi" href=https://t.me/memefi_coin_bot/main?startapp=r_a163c6457f" target="_blank">Memefi</a></div>
+    <div class="grid-item"><a class="memefi" href="https://t.me/tapswap_mirror_2_bot?start=r_777221361" target="_blank">TapSwap</a></div>
+    <div class="grid-item"><a class="memefi" href="https://t.me/catizenbot/gameapp?startapp=r_752_3020524" target="_blank">Catizen</a></div>
+    <div class="grid-item"><a class="memefi" href="https://t.me/blum/app?startapp=ref_1kSGR6KgWK" target="_blank">Blum</a></div>
+    <div class="grid-item"><a class="memefi" href="https://t.me/blum/app?startapp=ref_1kSGR6KgWK" target="_blank">Blum</a></div>
+    <div class="grid-item"><a class="memefi" href="https://t.me/blum/app?startapp=ref_1kSGR6KgWK" target="_blank">Blum</a></div>
+    <div class="grid-item"><a class="memefi" href="https://t.me/hamstEr_kombat_bot/start?startapp=kentId777221361" target="_blank">Hamster combat</a></div>
+    <div class="grid-item"><a class="memefi" href="https://t.me/empirebot/game?startapp=hero777221361" target="_blank">X empire</a></div>
+    <div class="grid-item"><a class="memefi" href="https://t.me/dogshouse_bot/join?startapp=CcTyDgsDTY2OgIQ8EV4xKA" target="_blank">Dogs</a></div>
+    <div class="grid-item"><a class="memefi" href="https://t.me/pocketfi_bot/Mining?startapp=777221361" target="_blank">PocketFi</a></div>
 </div>
 
+
+
 <footer>
-    <div class="footer-nav">
-        <nav>
-            <ul>
-                <li><a href="#home" onclick="scrollToTop()">Home</a></li>
-
-                <script>
-                    function scrollToTop() {
-                        window.scrollTo({ top: 0, behavior: 'smooth' });
-                    }
-                </script>
-
-                <li><a href="index2.html" target="_blank">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="https://www.instagram.com/layyyzi_/" target="_blank">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-
     <div class="footer-info">
-        <p>&copy; 2023 Stanislav Riabokon. All rights reserved.</p>
-        <p>Follow us on <a href="https://www.instagram.com/layyyzi_/" target="_blank">Instagram</a></p>
-    </div>
+        <h1>CryptoPress</h1>
 
+        <p>&copy; 2023 Stanislav Riabokon. All rights reserved.</p>
+        <p> Follow us on instagram and telegram </p>
+        <a href="#home" onclick="scrollToTop()">Home</a></li>
+
+        <script>
+            function scrollToTop() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        </script>
+
+        <div class="social-icons">
+            <a href="https://www.instagram.com/layyyzi_/" target="_blank">
+                <img src="images/insta2.png" alt="Instagram">
+            </a>
+            <a href="https://t.me/Layyyzi" target="_blank">
+                <img src="images/telegram.png" alt="Telegram">
+            </a></div>
 </footer>
 </body>
 </html>
