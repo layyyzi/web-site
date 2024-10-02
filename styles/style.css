@@ -1,6 +1,7 @@
 body {
     background-color: lightgray;
-    padding: 0;
+    padding: 0px;
+    margin: 0px;
 
 }
 
@@ -67,10 +68,11 @@ footer {
     padding: 20px 0;
     text-align: center;
     border-radius: 10px;
-
-
 }
-
+.footer_2 {
+    margin-bottom: 20px;
+    background-color: dimgray;
+}
 .footer-nav ul {
     list-style-type: none;
     margin: 0;
@@ -121,6 +123,7 @@ footer {
     margin: 0;
     box-sizing: border-box;
 
+
 }
 
 @media (max-width: 768px) {
@@ -148,6 +151,7 @@ footer {
     height: 200%;
     overflow: auto;
     border-right: 10px solid #002b55;
+    border-radius: 5px;
 }
 
 .sidebar nav ul {
@@ -165,7 +169,7 @@ footer {
     font-size: 18px;
 }
 
-main {
+.main {
     margin-left: 0px; /* Adjust margin if needed */
     padding: 15px;
     background-color: lightgray;
@@ -338,26 +342,42 @@ img[src="images/telegram.png"] {
 
 }
 
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 5px 0; /* Reduced padding */
+    text-align: center;
+    border-radius: 0px;
+}
+
 .footer-info {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Выровнять по горизонтали */
+    align-items: center;
     text-align: center;
+    margin: 5px 0; /* Reduced margin */
 }
 
 .footer-info p {
-    margin: 10px 0;
+    margin: 10px 0; /* Reduced margin */
+    font-size: 15px; /* Optional: Reduced font size */
+
+
 }
 
 .social-icons {
     display: flex;
-    justify-content: center; /* Выровнять по горизонтали */
-    margin-top: 10px; /* Добавить отступ сверху */
+    justify-content: center;
+    margin-top: 0px; /* Reduced margin */
 }
 
 .social-icons a {
-    margin: 0 10px; }
-
+    margin: 0 5px; /* Reduced margin */
+}
 a:hover {
     background-color: lightslategrey;
 }
@@ -424,7 +444,7 @@ header {
 
 /* Анимация для бургера */
 .toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 5px);
+    transform: rotate(-50deg) translate(-6px, 6px);
 }
 
 .toggle .line2 {
@@ -432,28 +452,29 @@ header {
 }
 
 .toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -5px);
+    transform: rotate(60deg) translate(-10px, -8px);
 }
 
 /* Адаптивность для мобильных устройств */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .nav-links {
         position: absolute;
-        right: 0;
-        height: 100vh;
-        top: 0;
-        background-color: #333;
+        right: 0%;
+        height: 42vh;
+        top:0%;
+        background-color: #505050;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         width: 100%;
         transform: translateX(100%);
-        transition: transform 0.5s ease-in;
+        transition: transform 0.3s ease-in;
+        border-radius: 10px;
     }
 
     .nav-links li {
-        margin: 20px 0;
+        margin: 15px 0;
     }
 
     .burger {
@@ -461,7 +482,7 @@ header {
     }
 
     .nav-active {
-        transform: translateX(0%);
+        transform: translateX(50%);
     }
 }
 
