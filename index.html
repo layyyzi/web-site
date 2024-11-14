@@ -5,15 +5,17 @@
     <title>cryptopress</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="html2" href="index2.html">
+    <script src="main.js" defer></script>
+    <meta name="description" content="Все про криптовалюту">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Stanislav Riabokon">
 </head>
 <body>
 
 <header>
     <nav class="navbar">
-        <div  class="logo">CryptoPress</div>
+        <div class="logo" onclick="location.reload()">CryptoPress</div>
         <ul class="nav-links">
-
-
             <li><a href="index2.html"target="_blank">About</a></li>
             <li><a href="https://www.binance.com/ru-UA" target="_blank">Services</a></li>
             <li><a href="https://www.instagram.com/layyyzi_/"target="_blank">Contact</a></li>
@@ -39,14 +41,39 @@
 
 
 <section class="banner">
-    <strong><h1 class="neon"> Welcome to CryptoWork </h1></strong>
+    <strong><h1 class="neon"> Welcome to CryptoPress </h1></strong>
     <strong> <p class="neon">Your go-to place for all things cryptocurrency.</p></strong>
+    <a href="index2.html"  class="btn">learn about crypto</a>
 </section>
-
-
-
-<p class="text-other">криптовалюта в міжнародному ринку.</p>
-
+<div class="main2">
+    <div class="container">
+        <h2 class="title2">Кому підійде цей курс</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="icon">🎓</div>
+                <h3 class="card-title">Тим, хто хоче змінити сферу діяльності</h3>
+                <p class="card-text">Ви отримаєте всі необхідні знання та навички для старту в криптовалютній сфері,
+                    дізнаєтесь основи блокчейну та криптовалют, навчитеся працювати з децентралізованими платформами,
+                    створите своє інвестиційне портфоліо. Під час навчання зможете зробити перші кроки у світі
+                    криптовалют.</p>
+            </div>
+            <div class="card">
+                <div class="icon">⚙️</div>
+                <h3 class="card-title">Початківцям та інвесторам з досвідом</h3>
+                <p class="card-text">Курс допоможе отримати відсутні знання та прискорити кар'єрне зростання в
+                    криптосфері. Викладачі-практики допоможуть набути нових навичок, і ви зможете працювати зі складними
+                    проектами, збільшуючи свою експертну вартість на ринку.</p>
+            </div>
+            <div class="card">
+                <div class="icon">💼</div>
+                <h3 class="card-title">Тим, хто шукає сучасну перспективну професію</h3>
+                <p class="card-text">Якщо ви хочете змінити професію та шукаєте перспективу в сучасній фінансовій сфері,
+                    цей курс із криптовалют допоможе вам освоїти одну з найбільш затребуваних професій у світі.</p>
+            </div>
+        </div>
+    </div>
+</div>
+        <p class="text-other">криптовалюта в міжнародному ринку.</p>
 
 <aside class="sidebar">
     <nav>
@@ -56,29 +83,32 @@
                 <li><a href="https://www.bybit.com/ru-RU" target="_blank">→ Bybit </a></li>
                 <li><a href="https://www.binance.com/ru-UA" target="_blank" >→ Binance</a></li>
                 <li><a href="https://www.okx.com/ru" target="_blank" >→ OKX</a></li> </strong>
-
         </ul>
     </nav>
 </aside>
 
 <main>
     <section class="news">
-        <strong> <h2> Про біржі: </h2></strong>
+        <strong><h2> Про біржі: </h2></strong>
         <article>
             <h3>Bybit</h3>
-            <p>Це криптовалютна біржа, яка пропонує торгівлю криптовалютами з кредитним плечем. Компанію Bybit засновано у 2018 році зі штаб-квартирою в Сінгапурі.</p>
+            <p>Це криптовалютна біржа, яка пропонує торгівлю криптовалютами з кредитним плечем. Компанію Bybit засновано
+                у 2018 році зі штаб-квартирою в Сінгапурі.</p>
         </article>
         <article>
             <h3>Binance</h3>
-            <p>Це криптовалютна біржа, яка пропонує торгівлю криптовалютами з кредитним плечем. Binance була заснована в 2017 році зі штаб-квартирою на Мальті.</p>
+            <p>Це криптовалютна біржа, яка пропонує торгівлю криптовалютами з кредитним плечем. Binance була заснована в
+                2017 році зі штаб-квартирою на Мальті.</p>
         </article>
         <article>
             <h3>OKX</h3>
-            <p>Це криптовалютна біржа, яка пропонує торгівлю криптовалютами з кредитним плечем. OKX була заснована в 2017 році зі штаб-квартирою в Гонконзі.</p>
+            <p>Це криптовалютна біржа, яка пропонує торгівлю криптовалютами з кредитним плечем. OKX була заснована в
+                2017 році зі штаб-квартирою в Гонконзі.</p>
         </article>
-        <!-- Add more articles as needed -->
+
+
     </section>
-    <table border="2">
+    <table class="table">
         <thead>
         <tr>
             <th>Bybit</th>
@@ -105,25 +135,28 @@
                 width: 100%;
                 border-collapse: collapse;
             }
+
             th, td {
                 padding: 10px;
                 border: 1px solid black;
                 text-align: center;
             }
+
             th {
-                background-color: #cdb72a;
+                background-color: #f2f2f2;
             } </style>
     </table>
 
-</main>
+<footer2>
+    <div class="image-caption">
 
-<div class="image-caption">
-    <p>Приклад графіку який використвується на біржах, щоб розуміти як рухалась ціна</p>
-    <img src="images/images%204.png" alt="Binance" width="600" height="250">
-</div>
+        <p>Приклад графіку який використвується на біржах, щоб розуміти як рухалась ціна</p>
+        <img src="images/images%204.png" alt="Binance" width="600" height="250">
+    </div>
+    <p class="text-default"> В світі криптовалюти, по цей час дуже набирають обертів телеграм боти в додатку telegram так звані "тапалки" і ось приклад 8 тапалок в який багато мільйонів користувачів:   </p>
+    </footer2>
 
-<p class="text-default"> В світі криптовалюти, по цей час дуже набирають обертів телеграм боти в додатку telegram так звані "тапалки" і ось приклад 8 тапалок в який багато мільйонів користувачів:   </p>
-<div class="grid-container">
+    <div class="grid-container">
     <div class="grid-item"> <a class="memefi" href=https://t.me/memefi_coin_bot/main?startapp=r_a163c6457f" target="_blank">Memefi</a></div>
     <div class="grid-item"><a class="memefi" href="https://t.me/tapswap_mirror_2_bot?start=r_777221361" target="_blank">TapSwap</a></div>
     <div class="grid-item"><a class="memefi" href="https://t.me/catizenbot/gameapp?startapp=r_752_3020524" target="_blank">Catizen</a></div>
@@ -135,16 +168,13 @@
     <div class="grid-item"><a class="memefi" href="https://t.me/dogshouse_bot/join?startapp=CcTyDgsDTY2OgIQ8EV4xKA" target="_blank">Dogs</a></div>
     <div class="grid-item"><a class="memefi" href="https://t.me/pocketfi_bot/Mining?startapp=777221361" target="_blank">PocketFi</a></div>
 </div>
-
-
-
 <footer>
     <div class="footer-info">
         <h1>CryptoPress</h1>
 
-        <p>&copy; 2024 Stanislav Riabokon. All rights reserved.</p>
+        <p>&copy; 2024 Stanislav Riabokon. Всі права захищені.</p>
         <p> Follow us on instagram and telegram </p>
-        <a href="#home" onclick="scrollToTop()">Home</a></li>
+        <a href="#" onclick="scrollToTop()">Політика конфеденційності</a></li>
 
         <script>
             function scrollToTop() {
@@ -152,14 +182,13 @@
             }
         </script>
     </div>
-        <div class="social-icons">
-
-           <a href="https://www.instagram.com/layyyzi_/" target="_blank">
-                <img src="images/insta2.png" alt="Instagram">
-            </a>
-            <a href="https://t.me/Layyyzi" target="_blank">
-                <img src="images/telegram.png" alt="Telegram">
-            </a></div>
+    <div class="social-icons">
+        <a href="https://www.instagram.com/layyyzi_/" target="_blank">
+            <img src="images/insta2.png" alt="Instagram">
+        </a>
+        <a href="https://t.me/Layyyzi" target="_blank">
+            <img src="images/telegram.png" alt="Telegram">
+        </a></div>
     </footer>
 </body>
 </html>
